@@ -10,9 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LearningBuddyEducationApp">
-        <activity android:name=".DemoVideo"></activity>
-        <activity android:name=".RegisterationActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashScreen.SplashScreenActivity"></activity>
+        <activity android:name=".Activity.DemoVideo" />
+        <activity android:name=".Activity.RegistrationActivity" />
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
