@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "47225327710",
+    "project_id": "learningbuddy-23bf4",
+    "storage_bucket": "learningbuddy-23bf4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47225327710:android:405bccc1a791b47f4424cf",
+        "android_client_info": {
+          "package_name": "com.example.learningbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47225327710-b3g4317p2g6egdb6lohfucapb2f6sbv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlDLeEOU6U2fZg3VBDFSGNbjaNNsjzWeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47225327710-b3g4317p2g6egdb6lohfucapb2f6sbv2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47225327710:android:2ced5564cfeacf904424cf",
+        "android_client_info": {
+          "package_name": "com.example.learningbuddyeducationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47225327710-b3g4317p2g6egdb6lohfucapb2f6sbv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlDLeEOU6U2fZg3VBDFSGNbjaNNsjzWeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47225327710-b3g4317p2g6egdb6lohfucapb2f6sbv2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
