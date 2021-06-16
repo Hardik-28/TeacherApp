@@ -39,7 +39,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 {
                     binding.editTextPhone.setError("Mobile Number is required");
                 }
-                
+
             }
         });
     }
