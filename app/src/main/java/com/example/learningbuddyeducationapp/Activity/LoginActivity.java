@@ -5,16 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.learningbuddyeducationapp.R;
-import com.example.learningbuddyeducationapp.databinding.ActivityDemoVideoBinding;
+import com.example.learningbuddyeducationapp.databinding.ActivityLoginBinding;
 
+public class LoginActivity extends AppCompatActivity {
+    ActivityLoginBinding binding;
 
-public class DemoVideo extends AppCompatActivity {
-    ActivityDemoVideoBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_demo_video);
-        binding = ActivityDemoVideoBinding.inflate(getLayoutInflater());
+        setContentView(R.layout.activity_login);
+        binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
     }
 }
