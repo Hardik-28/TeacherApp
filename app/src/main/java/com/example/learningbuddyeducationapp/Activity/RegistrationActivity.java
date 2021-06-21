@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class RegistrationActivity extends AppCompatActivity {
     ActivityRegisterationBinding binding;
-    String fullName,email,phoneNumber,password;
+    String fullName,email,phoneNumber,password,confirmPassword;
     private final FirebaseAuth mAuth = FirebaseAuth.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,37 +26,44 @@ public class RegistrationActivity extends AppCompatActivity {
         binding = ActivityRegisterationBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setContentView(R.layout.activity_registeration);
-        binding.submitButton.setOnClickListener(new View.OnClickListener() {
+        binding.registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(RegistrationActivity.this, "Thanks for registeration", Toast.LENGTH_SHORT).show();
-                fullName =binding.editTextTextPersonName.getText().toString().trim();
-                email= binding.emailAddress.getText().toString().trim();
-                phoneNumber= binding.editTextPhone.getText().toString().trim();
-                password = binding.editTextTextPassword.getText().toString();
+                fullName =binding.nameRegister.getText().toString().trim();
+                email= binding.emailRegister.getText().toString().trim();
+                phoneNumber= binding.numberRegister.getText().toString().trim();
+                password = binding.passwordRegister.getText().toString();
+                confirmPassword = binding.confirmPasswordRegister.getText().toString();
                 if (TextUtils.isEmpty(fullName))
                 {
-                    binding.editTextTextPersonName.setError("Name is required");
+                    binding.nameRegister.setError("Name is required");
                     return;
                 }
                 if (TextUtils.isEmpty(email))
                 {
-                    binding.emailAddress.setError("Email is required");
+                    binding.emailRegister.setError("Email is required");
                     return;
                 }
                 if (TextUtils.isEmpty(phoneNumber))
                 {
-                    binding.editTextPhone.setError("Mobile Number is required");
+                    binding.numberRegister.setError("Mobile Number is required");
                     return;
                 }
                 if (TextUtils.isEmpty(password))
                 {
-                    binding.editTextTextPassword.setError("Password is required");
+                    binding.passwordRegister.setError("Password is required");
                     return;
                 }
+                if (TextUtils.isEmpty(confirmPassword))
+                {
+                    binding.confirmPasswordRegister.setError("Password is required");
+                    return;
+                }
+
                 if (password.length()<6)
                 {
-                    binding.editTextTextPassword.setError("Password must be of 6 character or greater than 6");
+                    binding.passwordRegister.setError("Password must be of 6 character or greater than 6");
                     return;
                 }
                 signup(email,password);
